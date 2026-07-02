@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Медицинская карта"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лекарства"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название" />
+
+        <EditText
+            android:id="@+id/etDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дозировка (1 таблетка)" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Время приёма (08:00)" />
+
+        <Button
+            android:id="@+id/btnAddMed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить лекарство" />
+
+        <ListView
+            android:id="@+id/lvMeds"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Аллергии и хронические заболевания"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Например: аллергия на пыльцу" />
+
+        <Button
+            android:id="@+id/btnAddAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить" />
+
+        <ListView
+            android:id="@+id/lvAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</ScrollView>

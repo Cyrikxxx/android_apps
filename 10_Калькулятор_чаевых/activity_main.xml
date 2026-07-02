@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Калькулятор чаевых"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сумма счёта, руб."
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Количество человек"
+        android:inputType="number"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Чаевые: 10%"
+        android:layout_marginTop="12dp" />
+
+    <!-- Ползунок процента чаевых (5..25%) -->
+    <SeekBar
+        android:id="@+id/sbTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

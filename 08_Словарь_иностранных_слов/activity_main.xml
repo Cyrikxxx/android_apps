@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Словарь иностранных слов"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Слово (apple)" />
+
+        <EditText
+            android:id="@+id/etTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Перевод (яблоко)" />
+
+        <EditText
+            android:id="@+id/etExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пример (I eat an apple)" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Добавить слово" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Карточка для запоминания:"
+            android:layout_marginTop="12dp" />
+
+        <!-- Область карточки -->
+        <TextView
+            android:id="@+id/tvCard"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#E3F2FD"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnFlip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Перевернуть" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Следующая" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Все слова (долгое нажатие — удалить):"
+            android:layout_marginTop="12dp" />
+
+        <ListView
+            android:id="@+id/lvWords"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</ScrollView>
